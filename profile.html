@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Welcome, <span id="user-name"></span></h2>
+        <img id="profile-pic" src="default.jpg" alt="Profile Picture">
+        <p>Email: <span id="user-email"></span></p>
+
+        <h3>Edit Profile</h3>
+        <input type="text" id="edit-name" placeholder="Enter New Name">
+        <input type="file" id="edit-pic" accept="image/*">
+        <button onclick="updateProfile()">Update Profile</button>
+        <button class="logout" onclick="logout()">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

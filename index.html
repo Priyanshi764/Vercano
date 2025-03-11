@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button onclick="loginUser()">Login</button>
+        <p id="login-error" style="color: red;"></p>
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+
+        <h3>OR</h3>
+        <div id="g_id_onload"
+            data-client_id="538067293797-odahtigdntufk9ue03is324ndp2p1s9t.apps.googleusercontent.com"
+            data-context="signin"
+            data-ux_mode="popup"
+            data-callback="handleGoogleLogin"
+            data-itp_support="true">
+        </div>
+        <div class="g_id_signin" data-type="standard"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
